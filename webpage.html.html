@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Tab Navigation</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #4a4e69;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tab links styling */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 18px;
+            border-radius: 4px;
+            margin: 0 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Hover effect */
+        .navbar a:hover, .navbar a.active {
+            background-color: #22223b;
+            transform: scale(1.05);
+        }
+
+        /* Icons for tabs */
+        .navbar a i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation bar with tabs -->
+    <div class="navbar">
+        <a href="home.html" class="active"><i class="fas fa-home"></i>Home</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i>Contact</a>
+        <a href="language.html"><i class="fas fa-globe"></i>Language</a>
+        <a href="social.html"><i class="fas fa-users"></i>Social Account</a>
+    </div>
+
+</body>
+</html>
+
